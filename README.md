@@ -9,7 +9,7 @@ I've chosen this library because it is supported by Adobe and Microsoft and even
 
 Installation
 ------------
-1. Clone this repository: ```git clone ```
+1. Clone this repository: ```git clone https://github.com/AcademicsProject/BoomBoomBomber.git```
 3. Make sure you have `bower` and `simplehttpserver` installed: ```npm install -g bower simplehttpserver```
 3. Download dependencies: ```bower install```
 4. Run the HTTP server: ```simplehttpserver```
