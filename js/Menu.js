@@ -162,6 +162,21 @@ Menu = Class.extend({
         multiIconBoy.y = iconsY;
         gGameEngine.stage.addChild(multiIconBoy);
         this.views.push(multiIconBoy);
+
+        title1 = new createjs.Text("Made with ❤ by", "16px Helvetica", text[0].color);
+        title2 = new createjs.Text(" Shivam Singhal and Shashank Chugh", "bold 16px Helvetica", text[1].color);
+
+        titleWidth = title1.getMeasuredWidth() + title2.getMeasuredWidth();
+
+        title1.x = gGameEngine.size.w / 2 - titleWidth / 2 ;
+        title1.y = gGameEngine.size.h / 2 - title1.getMeasuredHeight() / 2 + 190;
+        gGameEngine.stage.addChild(title1);
+        this.views.push(title1);
+
+        title2.x = title1.x + title1.getMeasuredWidth();
+        title2.y = gGameEngine.size.h / 2 - title1.getMeasuredHeight() / 2 + 190;
+        gGameEngine.stage.addChild(title2);
+        this.views.push(title2);
     },
 
     showLoader: function() {
